@@ -1,0 +1,45 @@
+.home-banner-inner {
+  h2 {
+    font-size: $h2S;
+    color: $cWhite;
+    font-weight: 300;
+    margin-bottom: 16px;
+    letter-spacing: 5.1px;
+    color: #cbcbcb;
+  }
+  p {
+    margin-bottom: 16px;
+    font-weight: 200;
+    color: $cWhite;
+    font-size: $h5S;
+    letter-spacing: 3.06px;
+  }
+}
+.discover-more {
+  display: inline-block;
+  margin: 32px 0;
+  color: #7050d8;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 3px;
+    height: 36px;
+    background-color: #7050d8;
+    right: 50%;
+    transform: translateX(50%);
+    animation: scrollEffect 1s infinite;
+  }
+}
+@keyframes scrollEffect {
+  0% {
+    bottom: -41px;
+  }
+  50% {
+    bottom: -57px;
+  }
+  100% {
+    bottom: -41px;
+  }
+}

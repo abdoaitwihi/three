@@ -1,0 +1,60 @@
+:root {
+  /* headings */
+  --h1-size: 40px;
+  --h2-size: 26px;
+  --h3-size: 20px;
+  --h4-size: 22px;
+  --h5-size: 18px;
+  --h6-size: 16px;
+
+  /* paragraphs */
+  --para1-size: 16px;
+  --para2-size: 14px;
+  --para3-size: 12px;
+  --para4-size: 10px;
+}
+@media only screen and (max-width: 992px) {
+  :root {
+    /* headings */
+    --h1-size: 29px;
+    --h2-size: 20px;
+    --h3-size: 17px;
+    --h4-size: 16px;
+    --h5-size: 16px;
+    --h6-size: 16px;
+    /* paragraphs */
+    --para1-size: 14px;
+    --para2-size: 12px;
+    --para3-size: 10px;
+    --para4-size: 8px;
+  }
+  .first {
+    order: 1;
+  }
+  .second {
+    order: 2;
+  }
+}
+/* headings */
+$h1S: var(--h1-size);
+$h2S: var(--h2-size);
+$h3S: var(--h3-size);
+$h4S: var(--h4-size);
+$h5S: var(--h5-size);
+$h6S: var(--h6-size);
+/* paragraphs */
+$p1S: var(--para1-size);
+$p2S: var(--para2-size);
+$p3S: var(--para3-size);
+$p4S: var(--para4-size);
+/* colors */
+$cPrimary: #fa8072;
+$cSecond: #002367;
+$cThird: #ff6124;
+$cWhite: #ffffff;
+$cPrimaryLight: #fa620ac2;
+$cDark: #060019;
+$cBackground: #fafafa;
+$bgsColor: #f8f9fb;
+$cBlue: #16a7b5;
+/* buttons */

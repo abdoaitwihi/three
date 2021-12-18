@@ -1,0 +1,31 @@
+footer {
+  margin-top: 50px;
+  color: $cWhite;
+  // background-color: $cDark;
+  ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  ul li {
+    margin-right: 12px;
+    font-size: $p2S;
+    a {
+      @extend .c-light;
+    }
+  }
+  .social-icons ul {
+    display: flex;
+  }
+  h3 {
+    font-weight: 300;
+    opacity: 0.8;
+    font-size: $p1S;
+  }
+  hr {
+    border-color: white;
+  }
+  img {
+    filter: brightness(9.5);
+  }
+}

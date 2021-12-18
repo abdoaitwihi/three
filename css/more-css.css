@@ -1,0 +1,7 @@
+.card3 {
+  border-color: attr(data-color, color);
+}
+
+.card3 h3 {
+  color: attr(data-color, color);
+}

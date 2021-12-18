@@ -1,0 +1,114 @@
+.primary-button {
+  font-size: $p1S;
+  color: $cWhite;
+  display: inline-block;
+  padding: 8px 34px;
+  background-color: #146bc3;
+  border: none;
+  border-radius: 6px;
+  transition: 0.3s;
+  &.not-rounded {
+    border-radius: 8px;
+  }
+  &:hover {
+    background-color: $cWhite;
+    color: #146bc3;
+  }
+}
+.secondary-button {
+  font-size: $p1S;
+  color: $cWhite;
+  display: inline-block;
+  padding: 20px 50px;
+  background-color: $cSecond;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 30px;
+  &.not-rounded {
+    border-radius: 8px;
+  }
+}
+.btn-outline-primary {
+  color: $cPrimary;
+  border-color: $cPrimary;
+}
+
+.btn-primary {
+  color: $cWhite;
+  background-color: $cPrimary;
+  border-color: $cPrimary;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: $cPrimary;
+  border-color: $cPrimary;
+}
+.btn-primary:focus {
+  color: #fff;
+  background-color: $cPrimary;
+  border-color: $cPrimary;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: $cPrimary;
+  border-color: $cPrimary;
+}
+
+header {
+  .btn {
+    padding: 6px 19px !important;
+  }
+}
+
+.send-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: $cWhite;
+  position: relative;
+  span {
+    position: absolute;
+    margin-left: 5px;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+  }
+  &:hover {
+    span {
+      right: 3px;
+    }
+  }
+}
+
+.visit-button {
+  color: $color4;
+  border: solid 1px $color4;
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 6px 50px 6px 22px;
+  letter-spacing: 2.72px;
+  transition: 0.3s;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-image: url("../assets/icons/arrow-blue.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 50%;
+    right: 6px;
+    transform: rotate(-90deg) translateX(50%);
+    transform-origin: center center;
+  }
+  &:hover {
+    border-color: transparent;
+    color: $color4;
+    background-color: $cWhite;
+  }
+}
